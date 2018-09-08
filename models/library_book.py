@@ -3,6 +3,7 @@
 from openerp import models, fields, api
 from openerp.fields import Date as fDate
 from datetime import timedelta as td
+from openerp.exceptions import UserError
 
 class LibraryBook(models.Model):
     _name = 'library.book'
@@ -20,6 +21,7 @@ class LibraryBook(models.Model):
     state = fields.Selection(
         [('draft', 'Not Available'),
          ('available', 'Available'),
+         ('borrowed', 'Borrowed'),
          ('lost', 'Lost')],
         'State')
     description = fields.Html('Description')
@@ -78,7 +80,7 @@ class LibraryBook(models.Model):
     def _inverse_age(self):
         today = fDate.from_string(fDate.today())
         for book in self.filtered('date_release'):
-            d = today - td(days=book.age_days) 
+            d = today - td(days=book.age_days)
             book.date_release = fDate.to_string(d)
 
 
@@ -87,9 +89,9 @@ class LibraryBook(models.Model):
         value_days = td(days=value)
         value_date = fDate.to_string(today - value_days)
         return [('date_release', operator, value_date)]
-       
-        
-    
+
+
+
 
     def name_get(self):
         result = []
@@ -98,3 +100,18 @@ class LibraryBook(models.Model):
                 record.name, record.date_release)))
         return result
 
+    def is_allowed_transition(self, old_state, new_state):
+        allowed = [('draft', 'available'),
+                   ('available', 'borrowed'),
+                   ('borrowed', 'available'),
+                   ('borrowed', 'lost'),
+                   ('lost', 'available')]
+        return(old_state, new_state) in allowed
+
+    @api.multi
+    def change_state(self, new_state):
+        for book in self:
+            if book.is_allowed_transition(book.state, new_state):
+                book.state = new_state
+            else:
+                raise UserError(_("State change not allowed"))
