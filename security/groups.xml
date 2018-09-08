@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<odoo>
+  <data>
+    <!-- Users Groups Note that the field 'category_id' is set later in
+         base/module/module_data.xml -->
+     <record model="res.groups" id="group_library_manager">
+        <field name="name">Library Manager</field>
+     </record>
+   </data>
+</odoo>

@@ -20,5 +20,6 @@ First module made by training sessions for Farmacias Mia
     'data': [
          'views/library_book.xml',
          'security/ir.model.access.csv',
+         'security/groups.xml',
     ]
 }

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from openerp import models, fields, api
+from openerp import models, fields, api, _
 from openerp.fields import Date as fDate
 from datetime import timedelta as td
 from openerp.exceptions import UserError
@@ -65,6 +65,9 @@ class LibraryBook(models.Model):
         store=False,
         compute_sudo=False,
     )
+
+
+    manager_remarks = fields.Text("Manager Remarks")
 
     _sql_constraints = [
         ('name_uniq',
@@ -142,3 +145,17 @@ class LibraryBook(models.Model):
 
         record = self.env['res.partner'].create(vals)
 
+    @api.model
+    @api.returns('self', lambda rec: rec.id)
+    def create(self, values):
+        if not self.user_has_groups('my_module.group_library_manager'):
+            if 'manager_remarks' in values:
+                raise UserError(_("You are not allowed to modify 'manager remarks'"))
+        return super(LibraryBook, self).create(values)
+
+    @api.multi
+    def write(self, values):
+        if not self.user_has_groups('my_module.group_library_manager'):
+            if 'manager_remarks' in values:
+                raise UserError(_("You are not allowed to modify 'manager remarks'"))
+        return super(LibraryBook, self).write(values)
