@@ -5,8 +5,17 @@ from openerp.fields import Date as fDate
 from datetime import timedelta as td
 from openerp.exceptions import UserError
 
+class BaseArchive(models.AbstractModel):
+    _name = 'base.archive'
+    active = fields.Boolean(default=True)
+
+    def do_archive(self):
+        for record in self:
+            record.archive = not record.archive
+
 class LibraryBook(models.Model):
     _name = 'library.book'
+    _inherit = ['base.archive']
     _description = 'Library Book'
     _order = 'date_release desc, name'
     _rec_name = 'short_name'
@@ -115,3 +124,21 @@ class LibraryBook(models.Model):
                 book.state = new_state
             else:
                 raise UserError(_("State change not allowed"))
+
+    @api.model
+    def get_all_library_members(self):
+        library_member_model = self.env['library.member']
+        return library_member_model.search([])
+
+
+    @api.model
+    def create_end_customer(self):
+        vals = {
+            'name': u'Consumidor Final',
+            'vat': 'EC9999999999',
+            'email': 'facturacionelectronica@farmamia.com',
+            'is_company': False
+        }
+
+        record = self.env['res.partner'].create(vals)
+
