@@ -19,6 +19,7 @@ First module made by training sessions for Farmacias Mia
     'depends': ['base'],
     'data': [
          'views/library_book.xml',
+         'views/library_customers.xml',
          'security/ir.model.access.csv',
          'security/groups.xml',
     ]
