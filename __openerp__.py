@@ -23,5 +23,6 @@ First module made by training sessions for Farmacias Mia
          'views/partner_view.xml',
          'security/ir.model.access.csv',
          'security/groups.xml',
+         'report/partner_birthday_report.xml',
     ]
 }
