@@ -7,10 +7,16 @@
           res_model="library.book" />
 
        <menuitem
-          id="library_book_menu"
+          id="library_menu"
           name="Library"
-          action="library_book_action"
           parent=""
+          sequence="5" />
+
+       <menuitem
+          id="library_book_menu"
+          name="Books"
+          action="library_book_action"
+          parent="library_menu"
           sequence="5" />
 
 
