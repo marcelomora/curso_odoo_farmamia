@@ -1,0 +1,604 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* my_module
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-09 21:00+0000\n"
+"PO-Revision-Date: 2018-09-09 21:00+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_base_archive_active
+#: model:ir.model.fields,field_description:my_module.field_library_book_active
+#: model:ir.model.fields,field_description:my_module.field_library_member_active
+msgid "Active"
+msgstr "Activo"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_type
+msgid "Address Type"
+msgstr "Tipo de dirección"
+
+#. module: my_module
+#: model:ir.actions.act_window,name:my_module.action_all_customers
+#: model:ir.ui.menu,name:my_module.menu_all_customers
+msgid "All customers"
+msgstr "Todos los clientes"
+
+#. module: my_module
+#: model:ir.actions.act_window,name:my_module.action_all_customers_ec
+#: model:ir.ui.menu,name:my_module.menu_all_customers_ec
+msgid "All customers Ecuador"
+msgstr "Todos los clientes de Ecuador"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_book_author_ids
+msgid "Authors"
+msgstr "Autores"
+
+#. module: my_module
+#: selection:library.book,state:0
+msgid "Available"
+msgstr "Disponible"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_bank_ids
+msgid "Banks"
+msgstr "Bancos"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_barcode
+msgid "Barcode"
+msgstr "Código de barras"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_birthdate
+msgid "Birthdate"
+msgstr "Fecha de nacimiento"
+
+#. module: my_module
+#: model:ir.actions.report.xml,name:my_module.report_res_partner_birthdays
+msgid "Birthdays"
+msgstr "Cumpleaños"
+
+#. module: my_module
+#: model:ir.ui.view,arch_db:my_module.kanban_all_books
+msgid "Book"
+msgstr "Libro"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_book_cover
+msgid "Book Cover"
+msgstr "Tapa del libro"
+
+#. module: my_module
+#: sql_constraint:library.book:0
+msgid "Book title must be unique"
+msgstr "El título del libro debe ser único"
+
+#. module: my_module
+#: model:ir.ui.menu,name:my_module.library_book_menu
+msgid "Books"
+msgstr "Libros"
+
+#. module: my_module
+#: selection:library.book,state:0
+msgid "Borrowed"
+msgstr "Prestado"
+
+#. module: my_module
+#: model:ir.model.fields,help:my_module.field_library_member_is_company
+msgid "Check if the contact is a company, otherwise it is a person"
+msgstr "Marque esta casilla si el contacto es una compañía. En caso contrario, será una persona."
+
+#. module: my_module
+#: model:ir.model.fields,help:my_module.field_library_member_customer
+msgid "Check this box if this contact is a customer."
+msgstr "Presione en esta casilla si el contacto es un cliente"
+
+#. module: my_module
+#: model:ir.model.fields,help:my_module.field_library_member_supplier
+msgid "Check this box if this contact is a vendor. If it's not checked, purchase people will not see it when encoding a purchase order."
+msgstr "Marque esta casilla si el contacto es un proveedor. Si no está marcada, el equipo de compras no lo verá cuando esté haciendo una orden de compra."
+
+#. module: my_module
+#: model:ir.model.fields,help:my_module.field_library_member_employee
+msgid "Check this box if this contact is an Employee."
+msgstr "Marque si el contacto es un empleado"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_city
+msgid "City"
+msgstr "Ciudad"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_color
+msgid "Color Index"
+msgstr "Índice de Colores"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_commercial_partner_id
+msgid "Commercial Entity"
+msgstr "Entidad comercial"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_company_type
+msgid "Company Type"
+msgstr "Tipo de Compañía"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_contact_address
+msgid "Complete Address"
+msgstr "Dirección completa"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_child_ids
+msgid "Contacts"
+msgstr "Contactos"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_country_id
+msgid "Country"
+msgstr "País"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_book_create_uid
+#: model:ir.model.fields,field_description:my_module.field_library_member_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_book_create_date
+#: model:ir.model.fields,field_description:my_module.field_library_member_create_date
+msgid "Created on"
+msgstr "Creado"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_credit_limit
+msgid "Credit Limit"
+msgstr "Crédito concedido"
+
+#. module: my_module
+#: model:ir.ui.menu,name:my_module.customers_menu
+msgid "Customers"
+msgstr "Clientes"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_book_age_days
+msgid "Days since release"
+msgstr "Days since release"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_book_description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_base_archive_display_name
+#: model:ir.model.fields,field_description:my_module.field_library_book_display_name
+#: model:ir.model.fields,field_description:my_module.field_library_member_display_name
+msgid "Display Name"
+msgstr "Nombre Público"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_email
+msgid "Email"
+msgstr "Correo"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_employee
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_fax
+msgid "Fax"
+msgstr "Fax"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_base_archive_id
+#: model:ir.model.fields,field_description:my_module.field_library_book_id
+#: model:ir.model.fields,field_description:my_module.field_library_member_id
+msgid "ID"
+msgstr "ID"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_book_isbn
+msgid "ISBN"
+msgstr "ISBN"
+
+#. module: my_module
+#: model:ir.model.fields,help:my_module.field_library_member_lang
+msgid "If the selected language is loaded in the system, all documents related to this contact will be printed in this language. If not, it will be English."
+msgstr "Si el idioma seleccionado está cargado en el sistema, todos los documentos relacionados con el contacto se imprimirán en este idioma. Si no, se imprimirán en inglés."
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_image
+msgid "Image"
+msgstr "Imagen"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_book_notes
+msgid "Internal Notes"
+msgstr "Internal Notes"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_ref
+msgid "Internal Reference"
+msgstr "Referencia interna"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_is_company
+msgid "Is a Company"
+msgstr "¿Es una empresa?"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_customer
+msgid "Is a Customer"
+msgstr "Es Cliente"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_supplier
+msgid "Is a Vendor"
+msgstr "Es un Proveedor"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_function
+msgid "Job Position"
+msgstr "Puesto de trabajo"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_lang
+msgid "Language"
+msgstr "Idioma"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_base_archive___last_update
+#: model:ir.model.fields,field_description:my_module.field_library_book___last_update
+#: model:ir.model.fields,field_description:my_module.field_library_member___last_update
+msgid "Last Modified on"
+msgstr "Última Modificación el"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_book_date_updated
+msgid "Last Updated"
+msgstr "Last Updated"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_book_write_uid
+#: model:ir.model.fields,field_description:my_module.field_library_member_write_uid
+msgid "Last Updated by"
+msgstr "Actualizado por"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_book_write_date
+#: model:ir.model.fields,field_description:my_module.field_library_member_write_date
+msgid "Last Updated on"
+msgstr "Actualizado"
+
+#. module: my_module
+#: model:ir.ui.menu,name:my_module.library_menu
+msgid "Library"
+msgstr "Library"
+
+#. module: my_module
+#: model:ir.model,name:my_module.model_library_book
+msgid "Library Book"
+msgstr "Library Book"
+
+#. module: my_module
+#: model:ir.actions.act_window,name:my_module.library_book_action
+msgid "Library Books"
+msgstr "Library Books"
+
+#. module: my_module
+#: model:res.groups,name:my_module.group_library_manager
+msgid "Library Manager"
+msgstr "Library Manager"
+
+#. module: my_module
+#: selection:library.book,state:0
+msgid "Lost"
+msgstr "Lost"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_book_is_magazine
+#: model:ir.ui.view,arch_db:my_module.kanban_all_books
+msgid "Magazine"
+msgstr "Magazine"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_book_manager_remarks
+msgid "Manager Remarks"
+msgstr "Manager Remarks"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_image_medium
+msgid "Medium-sized image"
+msgstr "Imagen mediana"
+
+#. module: my_module
+#: model:ir.model.fields,help:my_module.field_library_member_image_medium
+msgid "Medium-sized image of this contact. It is automatically resized as a 128x128px image, with aspect ratio preserved. Use this field in form views or some kanban views."
+msgstr "Imagen mediana de este contacto. Se redimensiona automáticamente a 128x128 px, con el ratio de aspecto preservado. Se usa este campo en las vistas los formularios y en algunas vistas de kanban."
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_date_start
+msgid "Member since"
+msgstr "Member since"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_mobile
+msgid "Mobile"
+msgstr "Tel. Celular"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: my_module
+#: model:ir.ui.view,arch_db:my_module.library_book_view_search
+msgid "No Authors"
+msgstr "No Authors"
+
+#. module: my_module
+#: selection:library.book,state:0
+msgid "Not Available"
+msgstr "Not Available"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_comment
+msgid "Notes"
+msgstr "Notas"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_member_number
+msgid "Number"
+msgstr "Number"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_book_pages
+msgid "Number of Pages"
+msgstr "Number of Pages"
+
+#. module: my_module
+#: model:ir.ui.view,arch_db:my_module.form_all_customers
+msgid "Open commercial partner"
+msgstr "Open commercial partner"
+
+#. module: my_module
+#: model:ir.ui.view,arch_db:my_module.form_all_customers
+msgid "Open partner categories"
+msgstr "Open partner categories"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_book_out_of_print
+msgid "Out of Print?"
+msgstr "Out of Print?"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_parent_name
+msgid "Parent name"
+msgstr "Nombre Padre"
+
+#. module: my_module
+#: model:ir.model,name:my_module.model_library_member
+#: model:ir.model,name:my_module.model_res_partner
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_partner_id
+msgid "Partner id"
+msgstr "Partner id"
+
+#. module: my_module
+#: model:ir.ui.view,arch_db:my_module.qweb_res_partner_birthdays
+msgid "Partner's birthdays"
+msgstr "Partner's birthdays"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_phone
+msgid "Phone"
+msgstr "Teléfono"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_book_ids
+#: model:ir.model.fields,field_description:my_module.field_res_partner_book_ids
+msgid "Published Books"
+msgstr "Published Books"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_book_publisher_id
+msgid "Publisher"
+msgstr "Publisher"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_book_reader_rating
+msgid "Reader Average Rating"
+msgstr "Reader Average Rating"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_parent_id
+msgid "Related Company"
+msgstr "Empresa relacionada"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_book_date_release
+msgid "Release Date"
+msgstr "Release Date"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_user_id
+msgid "Salesperson"
+msgstr "Vendedor"
+
+#. module: my_module
+#: model:ir.model.fields,help:my_module.field_library_member_use_parent_address
+msgid "Select this if you want to set company's address information  for this contact"
+msgstr "Seleccione esto si quiere establecer la información de la dirección de la compañía para este contacto"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_book_short_name
+msgid "Short Title"
+msgstr "Short Title"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_image_small
+msgid "Small-sized image"
+msgstr "Imagen pequeña"
+
+#. module: my_module
+#: model:ir.model.fields,help:my_module.field_library_member_image_small
+msgid "Small-sized image of this contact. It is automatically resized as a 64x64px image, with aspect ratio preserved. Use this field anywhere a small image is required."
+msgstr "Imagen de tamaño pequeño de este contacto. Se redimensiona automáticamente a 64x64 px, con el ratio de aspecto preservado. Use este campo donde se requiera una imagen pequeña."
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_book_state
+#: model:ir.model.fields,field_description:my_module.field_library_member_state_id
+msgid "State"
+msgstr "Estado"
+
+#. module: my_module
+#: code:addons/my_module/models/library_book.py:131
+#, python-format
+msgid "State change not allowed"
+msgstr "State change not allowed"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_street
+msgid "Street"
+msgstr "Calle"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_street2
+msgid "Street2"
+msgstr "Calle2"
+
+#. module: my_module
+#: model:ir.ui.view,arch_db:my_module.search_all_customers
+msgid "Suppliers"
+msgstr "Suppliers"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_vat
+msgid "TIN"
+msgstr "Identificación"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_category_id
+msgid "Tags"
+msgstr "Etiquetas"
+
+#. module: my_module
+#: model:ir.model.fields,help:my_module.field_library_member_vat
+msgid "Tax Identification Number. Fill it if the company is subjected to taxes. Used by the some of the legal statements."
+msgstr "Número de identificación fiscal. Marque la casilla si el contacto está sujeto a impuestos. Usado por algunos documentos legales."
+
+#. module: my_module
+#: model:ir.model.fields,help:my_module.field_library_member_company_type
+msgid "Technical field, used only to display a boolean using a radio button. As for Odoo v9 RadioButton cannot be used on boolean fields, this one serves as interface. Due to the old API limitations with interface function field, we implement it by hand instead of a true function field. When migrating to the new API the code should be simplified. Changing thecompany_type of a company contact into a company will not displaythis contact as a company contact but as a standalone company."
+msgstr "Technical field, used only to display a boolean using a radio button. As for Odoo v9 RadioButton cannot be used on boolean fields, this one serves as interface. Due to the old API limitations with interface function field, we implement it by hand instead of a true function field. When migrating to the new API the code should be simplified. Changing thecompany_type of a company contact into a company will not displaythis contact as a company contact but as a standalone company."
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_date_end
+msgid "Termination Date"
+msgstr "Termination Date"
+
+#. module: my_module
+#: model:ir.model.fields,help:my_module.field_library_member_user_id
+msgid "The internal user that is in charge of communicating with this contact if any."
+msgstr "El usuario interno encargado de comunicarse con este contacto si lo hubiese."
+
+#. module: my_module
+#: model:ir.model.fields,help:my_module.field_library_member_tz
+msgid "The partner's timezone, used to output proper date and time values inside printed reports. It is important to set a value for this field. You should use the same timezone that is otherwise used to pick and render date and time values: your computer's timezone."
+msgstr "Zona horaria de la empresa, usada para mostrar la fecha y hora adecuadas en los informes impresos. Es importante establecer un valor para este campo. Debería usar la misma zona horaria que se coge en caso contrario para mostrar los valores de fecha y hora: la zona horaria de su ordenador."
+
+#. module: my_module
+#: model:ir.model.fields,help:my_module.field_library_member_image
+msgid "This field holds the image used as avatar for this contact, limited to 1024x1024px"
+msgstr "Este campo contiene la imagen utilizada como avatar para este contacto, limitada a 1024x1024 px"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_tz
+msgid "Timezone"
+msgstr "Zona horaria"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_tz_offset
+msgid "Timezone offset"
+msgstr "Zona horaria"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_book_name
+#: model:ir.model.fields,field_description:my_module.field_library_member_title
+msgid "Title"
+msgstr "Título"
+
+#. module: my_module
+#: model:ir.model.fields,help:my_module.field_library_book_pages
+msgid "Total book page count"
+msgstr "Total book page count"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_use_parent_address
+msgid "Use Company Address"
+msgstr "Utilizar la dirección de la empresa"
+
+#. module: my_module
+#: model:ir.model.fields,help:my_module.field_library_member_type
+msgid "Used to select automatically the right address according to the context in sales and purchases documents."
+msgstr "﻿Utilizado para seleccionar automáticamente la dirección correcta según el contexto en documentos de ventas y compras."
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_user_ids
+msgid "Users"
+msgstr "Usuarios"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_website
+msgid "Website"
+msgstr "Sitio web"
+
+#. module: my_module
+#: model:ir.model.fields,help:my_module.field_library_member_website
+msgid "Website of Partner or Company"
+msgstr "Sitio web de la empresa o compañía"
+
+#. module: my_module
+#: code:addons/my_module/models/library_book.py:155
+#: code:addons/my_module/models/library_book.py:162
+#, python-format
+msgid "You are not allowed to modify 'manager remarks'"
+msgstr "You are not allowed to modify 'manager remarks'"
+
+#. module: my_module
+#: model:ir.model.fields,field_description:my_module.field_library_member_zip
+msgid "Zip"
+msgstr "C.P."
+
+#. module: my_module
+#: model:ir.model,name:my_module.model_base_archive
+msgid "base.archive"
+msgstr "base.archive"
+
