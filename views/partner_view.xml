@@ -9,7 +9,13 @@
                     <field name="write_date" />
                 </field>
                 <xpath expr="//notebook/page[@name='sales_purchases']" position="inside">
-                    <field name="book_ids" />
+                    <field name="book_ids">
+                        <tree>
+                            <field name="name" />
+                            <field name="date_release" />
+                            <field name="isbn" />
+                        </tree>
+                    </field>
                 </xpath>
             </field>
         </record>
@@ -24,3 +30,4 @@
         </record>
     </data>
 </openerp>
+

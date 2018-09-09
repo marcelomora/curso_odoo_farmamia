@@ -68,6 +68,8 @@ class LibraryBook(models.Model):
 
 
     manager_remarks = fields.Text("Manager Remarks")
+    is_magazine = fields.Boolean("Magazine")
+    isbn = fields.Char("ISBN")
 
     _sql_constraints = [
         ('name_uniq',
